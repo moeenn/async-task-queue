@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "checkJs": true,
+    "target": "ES2015",
+    "moduleResolution": "node",
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}
