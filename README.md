@@ -3,7 +3,13 @@ Implementation of an Async Task Queue with support for max parallel promises.
 
 ### Usage
 ```javascript
-import { Task, TaskQueue, sleep } from "./TaskQueue/index.mjs"
+import { Task, TaskQueue } from "./TaskQueue/index.mjs"
+
+/**
+ * @param {number} ms
+ * @returns {Promise<void>}
+ */
+export const sleep = async (ms) => new Promise(resolve => setTimeout(resolve, ms))
 
 /** @param {number} id */
 async function task(id) {
